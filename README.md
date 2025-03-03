@@ -1,4 +1,4 @@
-# Computer Vision - mini-projects
+# Computer Vision: mini-projects
 
 ## Overview
 This repository contains three Python scripts that apply various image processing techniques using **OpenCV**. These scripts allow users to perform different tasks such as basic image editing (grayscale, resizing, rotation, etc.), color segmentation, and applying artistic effects.
