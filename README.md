@@ -67,7 +67,30 @@ This script is useful for **image color analysis, background simplification, and
 
 ---
 
-## 3. Dreamy Glow Effect & Contour Enhancement  
+## 3. Image Classification Using ORB Feature Matching
+
+### Overview
+This script classifies an input image by comparing its features with reference images using the ORB (Oriented FAST and Rotated BRIEF) feature detector. It utilizes feature matching techniques to determine the most similar reference image and assigns a classification label accordingly.
+
+### How Computer Vision is Used
+- **ORB Feature Detection**: Extracts keypoints and descriptors from images.
+- **Feature Matching**: Uses BFMatcher (Brute-Force Matcher) with Hamming distance to find similarities between images.
+- **Classification Based on Matches**: Assigns the input image to the class with the highest feature match count.
+
+### Usage
+1. Place the input image (`img6.jpg`) and reference images (`img3.jpg`, `darwin.jpg`, `RCW.jpg`) in the same directory as the script.
+2. Run the script:
+   ```sh
+   python image_classification.py
+   ```
+3. The script will output the classification result and display the input and reference images.
+
+### Conclusion
+This script provides a simple yet effective way to classify images based on feature matching. It can be extended for various applications such as object recognition, image retrieval, and automated categorization.
+
+---
+
+## 4. Dreamy Glow Effect & Contour Enhancement  
 
 ### Overview  
 This script applies a **dreamy glow effect** and **contour enhancement** to an image using **OpenCV**. Users can adjust parameters like **blur intensity, blending strength, RGB color balance, and contour thickness** through interactive trackbars. (The bounding box is square so it might look weird to you, I didn't want to fix it anymore. So, yea.)
